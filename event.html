@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+        <div class="navbar"><a class="logo" href="index.html"><img src="img/DIGIGAME.png" alt=""></a></div>
+            <ul>
+              <li><a class="nav-link" href="index.html">Home</a></li>
+              <li><a class="nav-link active" aria-current="page" href="event.html">Event</a></li>
+              <li><a class="nav-link" href="product.html">Product</a></li>
+              <li><a class="nav-link" href="collab.html">Collab</a></li>
+              <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger">
+              <div class="bar"></div>
+            </button>
+
+              <div class="mobile-nav">
+                <a href="index.html">Home</a>
+                <a href="event.html">Event</a>
+                <a href="product.html">Product</a>
+                <a href="collab.html">Collab</a>
+                <a href="contact.html">Contact</a>
+              </div>
+          </div>
+        </div>
+      </nav>
+    
+      <div class="slider-container">
+        <div class="slider-slide">
+            <img src="img/dbi.png" alt="Image 1">
+        </div>
+        <div class="slider-slide">
+            <img src="img/inco.png" alt="Image 2">
+        </div>
+        <div class="slider-slide">
+            <img src="img/inco.png" alt="Image 3">
+        </div>
+    </div>
+    
+    <div class="slider-nav">
+        <span class="slider-dot active" onclick="showSlide(0)"></span>
+        <span class="slider-dot" onclick="showSlide(1)"></span>
+        <span class="slider-dot" onclick="showSlide(2)"></span>
+    </div>
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll('.slider-slide');
+      const dots = document.querySelectorAll('.slider-dot');
+
+      function showSlide(index) {
+          slides[currentSlide].style.display = 'none';
+          dots[currentSlide].classList.remove('active');
+          currentSlide = index;
+          slides[currentSlide].style.display = 'block';
+          dots[currentSlide].classList.add('active');
+      }
+
+      // Automatically advance to the next slide every 3 seconds
+      setInterval(() => {
+          const nextSlide = (currentSlide + 1) % slides.length;
+          showSlide(nextSlide);
+      }, 3000);
+  </script>
+  </body>
+</html>
