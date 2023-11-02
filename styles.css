@@ -6,7 +6,7 @@ body {
   background-position: center;
   background-size: cover;
   color: #ffffff;
- 
+
   }
 ul .navv {
     margin-top: 0;
@@ -18,7 +18,7 @@ ul .navv{
 
 ul .navv{
     display: block;
-  
+
 }
 
   .underline {
@@ -31,74 +31,6 @@ ul .navv{
     pointer-events: none;
     transition: 0.35s;
   }
-  
-  /* Styles for the slider container */
-.slider-container {
-  width: 500px;
-  overflow: hidden;
-  position: relative;
-  scroll-snap-type: x mandatory;
-  text-align: center; /* Center the contents of the container horizontally */
-  margin: 0 auto; /* Center the container itself horizontally */
-}
-.slider-arrow {
-  background: transparent;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: #FFF;
-}
-
-
-
-/* Styles for the individual slides */
-.slider-slide {
-  display: none;
-  width: 100%;
-  animation: slideAnimation 1s ease-in-out forwards;
-}
-
-/* Style for the images within slides */
-.slider-slide img {
-  display: inline-block; /* Set images to inline-block elements */
-  max-width: 100%; /* Ensure the image does not exceed the container width */
-  height: auto;
-  margin: 0 auto; /* Center the image horizontally */
-}
-
-
-
-
-/* Style for the navigation buttons */
-.slider-nav {
-    text-align: center;
-    margin-top: 10px;
-}
-
-/* Style for the navigation dots */
-.slider-dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #333;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.slider-arrow.prev, .slider-arrow.next {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
- 
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-/* Style for the active dot */
-.slider-dot.active {
-    background-color: #888;
-}
 
 * {
   margin: 0;
@@ -107,7 +39,7 @@ ul .navv{
   font-family: 'poppins', sans-serif;
 }
 
-.contactUs, .collab
+.contactUs
 {
   position: relative;
   width: 100%;
@@ -212,7 +144,6 @@ ul .navv{
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transition: transform .6s ease-in-out;
 }
 
 .carousel-indicators {
@@ -234,7 +165,7 @@ dl, ol, ul {
   margin-bottom: 1rem;
 }
 ol, ul {
-  
+
 }
 *, ::after, ::before {
   box-sizing: border-box;
@@ -276,7 +207,7 @@ ol {
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
- 
+
 }
 
 .navigasi .navv  {
@@ -286,7 +217,7 @@ ol {
   margin-bottom: 0px;
   overflow: hidden;
 }
- 
+
 .navigasi .navv1  {
   display: flex;
   justify-content: space-between;
@@ -318,10 +249,13 @@ ol {
   font-size: 30px;
   color: #ffffff;
 }
- .navv:hover,
- .navv .active {
+ .navv :hover,
+ .navv .active,
+ .mobile-nav :hover,
+ .mobile-nav .active {
   color: rgb(226, 44, 129) !important;
  }
+
 
 
 
@@ -345,7 +279,7 @@ ol {
 
 .dropdown_menu.open {
   height: 240px;
-  
+
 
 }
 .dropdown_menu li{
@@ -365,6 +299,7 @@ ol {
 
 .home-content {
   max-width: 600px;
+  display: block;
 }
 
 .home-content h1 {
@@ -377,7 +312,7 @@ ol {
   font-size: 32px;
   font-weight: 700;
   color: rgb(226, 44, 129);
-  padding-bottom: 20px;
+ /* padding-bottom: 20px;*/
 }
 
 .home-content p {
@@ -431,7 +366,7 @@ ol {
 }
 
 .container-event {
-  background-color: #FFF;
+  background-color: #353030;
   border-radius: 10px;
   margin: 20px 20px 40px; /* Center the container horizontally */
   padding: 40px;
@@ -441,7 +376,7 @@ ol {
 }
 
 .container-event2 {
-  background-color: #FFF;
+  background-color: #353030;
   border-radius: 10px;
   margin: 20px 20px 40px; /* Center the container horizontally */
   padding: 40px;
@@ -451,26 +386,49 @@ ol {
   flex-wrap: wrap;
 }
 
-.container {
-
-  margin: 20px 0 40px; /* Center the container horizontally */
+.kolab {
+  margin: 20px 150px 40px; /* Center the container horizontally */
   padding: 40px;
   display: flex; /* Use flexbox for layout */
   align-items: center; /* Vertically align items */
   flex-wrap: wrap;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
-
-
-.container2 {
-  margin: 20px 0 40px; /* Center the container horizontally */
+.kolab2 {
+  margin: 20px 150px 40px; /* Center the container horizontally */
   padding: 40px;
   display: flex; /* Use flexbox for layout */
   align-items: center; /* Vertically align items */
   flex-wrap: wrap;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.kartu {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.kartu2 {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
 }
 
 .left-side {
+  color: #000000;
   flex: 1; /* Take up all available horizontal space */
 }
 
@@ -481,8 +439,13 @@ ol {
 
 
 .right-side {
+  display: flex;
   flex-basis: 100px; /* Set a fixed width for the logo side */
   text-align: right; /* Align logo to the right */
+  align-items: center;
+  color: #000000;
+
+
 }
 
 .right-side-event {
@@ -490,20 +453,21 @@ ol {
   text-align: right; /* Align logo to the right */
 }
 
-
-
 .right-side2 {
   flex: 1; /* Take up all available horizontal space */
+  color: #000000;
 }
 
 .isiteks {
   text-align: left;
   padding : 0 0 20px;
+  color: #FFF;
 }
 
 .isiteks2 {
   text-align: left;
   padding : 0 20px 20px;
+  color: #FFF;
 }
 
 .row {
@@ -527,10 +491,7 @@ ol {
   font-size: 16px;
 }
 
-.logo {
-  max-width: 200px;
-  height: auto;
-}
+
 
 /* Halaman Kontak*/
 
@@ -559,6 +520,7 @@ ol {
   background: #fff;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
 }
+
 .box
 {
   position: relative;
@@ -577,7 +539,7 @@ ol {
   color: #03a9f5;
   font-weight: 500;
   font-size: 1.4em;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 /* form */
@@ -676,6 +638,7 @@ ol {
 .info .infoBox div p{
   color: #FFF;
   font-size: 1.1em;
+  margin-bottom: 0;
 }
 
 .info .infoBox div a{
@@ -828,6 +791,19 @@ button {
   }
 }
 
+@media (max-width: 932px) {
+  .kolab {
+    margin: 20px 75px 40px; /* Center the container horizontally */
+    
+  }
+  
+  .kolab2 {
+    margin: 20px 75px 40px; /* Center the container horizontally */
+   
+   
+  }
+}
+
 @media (min-width: 768px) {
 	.mobile-nav {
 		display: none;
@@ -841,9 +817,8 @@ button {
     flex: 0 0 auto;
     width: 50%;
 }
-
-
 }
+
 
 @media screen and (max-width: 768px){
  .navigasi .navv  {
@@ -861,9 +836,6 @@ button {
   .navigasi {
     padding : 30px 30px;
   }
-  
-  
-
   .title {
     font-size: 26px;
   }
@@ -904,13 +876,37 @@ button {
   }
 
 
-  
 }
+
+@media (max-width: 680px) {
+  .kolab {
+    margin: 20px 50px 40px; /* Center the container horizontally */
+    padding: 40px;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column-reverse;
+    align-items: center; /* Vertically align items */
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+       
+  .kolab2 {
+    margin: 20px 50px 40px; /* Center the container horizontally */
+    padding: 40px;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column;
+    align-items: center; /* Vertically align items */
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+}
+
+
 @media screen and (min-width: 576px) {
  /* .mobile-nav{
     display: none;
   }
-
   .hamburger {
     display: none;
   }*/
@@ -928,23 +924,23 @@ button {
   .navigasi {
     padding : 30px 30px;
   }
-  
+
   .title{
     font-size: 22px;
   }
-  
+
   .brandtitle {
-    font-size: 14px;
+    font-size: 16px;
   }
   .subject {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .home-content h1 {
-    font-size: 46px;
+    font-size: 40px;
   }
   .home-content h3 {
-    font-size: 26px;
+    font-size: 22px;
   }
   .home-content p {
     font-size: 13px;
@@ -955,7 +951,7 @@ button {
   }
 
   .logo {
-    max-width: 150px;
+    max-width: 170px;
     height: auto;
   }
 
@@ -965,16 +961,13 @@ button {
  
     padding: 10px;  
   }
-
   .right-side, .right-side2 {
     margin-top: 20px;
     align-items: center;
   }
-
   .container2 {
     flex-direction: column-reverse;
   }
-
       <div class="slider-container" status="inactive">
         <div class="slider-slide">
             <img src="img/dbi.png" alt="Image 1">
@@ -996,7 +989,6 @@ button {
       let currentSlide = 0;
       const slides = document.querySelectorAll('.slider-slide');
       const dots = document.querySelectorAll('.slider-dot');
-
       function showSlide(index) {
           slides[currentSlide].style.display = 'none';
           dots[currentSlide].classList.remove('active');
@@ -1004,15 +996,13 @@ button {
           slides[currentSlide].style.display = 'block';
           dots[currentSlide].classList.add('active');
       }
-
       // Automatically advance to the next slide every 3 seconds
       setInterval(() => {
           const nextSlide = (currentSlide + 1) % slides.length;
           showSlide(nextSlide);
       }, 3000);
-
   */
- 
+
 }
 
 
@@ -1116,12 +1106,12 @@ button {
   opacity: 0;
  }
 
- .container{
+ .kolab{
   animation: slide-right 2s ease forwards;
   opacity: 0;
  }
 
- .container2 {
+ .kolab2 {
   animation: slide-left 2s ease forwards;
   opacity: 0;
  }
