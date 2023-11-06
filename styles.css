@@ -297,8 +297,16 @@ ol {
   padding: 0 10%;
 }
 
+.tentang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10%;
+  padding-bottom: 10%;
+}
+
 .home-content {
-  max-width: 600px;
+  max-width: 800px;
   display: block;
 }
 
@@ -318,6 +326,12 @@ ol {
 .home-content p {
   font-size: 16px;
   margin: 20px 0 40px;
+}
+
+.home-content li{
+  font-size: 16px;
+  margin-bottom: 0;
+  margin: 20px 0 20px;
 }
 
 .home-content .btn-box {
@@ -366,7 +380,7 @@ ol {
 }
 
 .container-event {
-  background-color: #353030;
+  background-image: linear-gradient(0deg, #fd5979 0, #fd5084 10%, #ff5096 20%, #ff429d 30%, #fb3ba5 40%, #f734b6 50%, #e235be 60%, #d032c7 70%, #bb35d0 80%, #a33ada 90%, #8541e3 100%);
   border-radius: 10px;
   margin: 20px 20px 40px; /* Center the container horizontally */
   padding: 40px;
@@ -376,7 +390,7 @@ ol {
 }
 
 .container-event2 {
-  background-color: #353030;
+  background-image: linear-gradient(0deg, #fd5979 0, #fd5084 10%, #ff5096 20%, #ff429d 30%, #fb3ba5 40%, #f734b6 50%, #e235be 60%, #d032c7 70%, #bb35d0 80%, #a33ada 90%, #8541e3 100%);
   border-radius: 10px;
   margin: 20px 20px 40px; /* Center the container horizontally */
   padding: 40px;
@@ -851,7 +865,7 @@ button {
   .home-content h3 {
     font-size: 30px;
   }
-  .home-content p {
+  .home-content p, .home-content li {
     font-size: 14px;
   }
   .btn-box {
@@ -874,11 +888,7 @@ button {
     text-align: left;
     padding : 0 0 20px;
   }
-
-
-}
-
-@media (max-width: 680px) {
+  
   .kolab {
     margin: 20px 50px 40px; /* Center the container horizontally */
     padding: 40px;
@@ -900,6 +910,12 @@ button {
     background-color: #ffffff;
     border-radius: 10px;
   }
+
+
+}
+
+@media (max-width: 680px) {
+  
 }
 
 
@@ -1066,11 +1082,6 @@ button {
   transform: translateY(20px);
 }
 
-.home-content h3 {
-  animation: slide-right 1s ease forwards;
-  opacity: 0;
-  transform: translateY(20px);
-}
 
 .home-content p {
   animation: slide-right 1s ease forwards;
@@ -1095,7 +1106,7 @@ button {
   opacity: 0;
   transform: translateX(20px)
 }
- .map {
+ .map, .home-content h3 {
   animation: fade 2s ease forwards;
   opacity: 0;
  }
@@ -1106,12 +1117,12 @@ button {
   opacity: 0;
  }
 
- .kolab{
+ .kolab, .container-event {
   animation: slide-right 2s ease forwards;
   opacity: 0;
  }
 
- .kolab2 {
+ .kolab2, .container-event2, .home-content li {
   animation: slide-left 2s ease forwards;
   opacity: 0;
  }
