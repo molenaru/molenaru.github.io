@@ -53,6 +53,7 @@ ul .navv{
   align-items: center;
   font-size: 2em;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .title h2
@@ -303,10 +304,17 @@ ol {
   align-items: center;
   padding: 0 10%;
   padding-bottom: 10%;
+
+}
+
+.tentang .home-content {
+  background-color: #0e3959;
+  padding: 50px;
+  border-radius: 10px;
 }
 
 .home-content {
-  max-width: 800px;
+  width: 100%;
   display: block;
 }
 
@@ -1117,12 +1125,12 @@ button {
   opacity: 0;
  }
 
- .kolab, .container-event {
-  animation: slide-right 2s ease forwards;
+ .kolab, .container-event, .home-content li {
+  animation: slide-right 1s ease forwards;
   opacity: 0;
  }
 
- .kolab2, .container-event2, .home-content li {
-  animation: slide-left 2s ease forwards;
+ .kolab2, .container-event2, .home-content .visi {
+  animation: slide-left 1s ease forwards;
   opacity: 0;
  }
