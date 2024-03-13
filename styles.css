@@ -98,21 +98,22 @@ ul .navv{
 
 .mobile-nav {
 	position: fixed;
-	bottom: 100%;
-	left: 0;
+  left: 0;
+  margin-top: 55px;
+  height: auto;
+  top: 0;
+  display: none;
 	width: 100%;
-	min-height: 50vh;
-	display: block;
-	z-index: 8;
-	background-color: #1d1b1b;
-	padding-top: 80px;
+	background-color: #2b2a2a;  
+  z-index: 8;
+  padding-top: 20px;
   padding-bottom: 10px;
-	transition: 0.4s;
-  opacity: 1;
+  
 }
 
 .mobile-nav.is-active {
-	bottom: 50%;
+ display: block;
+ animation: slideAnimation2 0.5s ease forwards;
 }
 
 .mobile-nav a {
@@ -139,6 +140,10 @@ ul .navv{
   text-decoration: none;
   background-color: transparent;
 
+}
+
+.navigasi.is-active {
+  background-color: #2b2a2a;
 }
 
 .navigasi .navv  {
@@ -175,7 +180,6 @@ ul .navv{
 	width: 140px;
   height: auto;
 	cursor: pointer;
-  padding-left: ;
   z-index: 10;
 }
 
@@ -1084,14 +1088,14 @@ button {
   }
 }
 
-@keyframes slideAnimation  {
+@keyframes slideAnimation2  {
   0% {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateY(-100%);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
